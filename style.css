@@ -154,6 +154,7 @@ address{
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 30px;
+    border: transparent;
 }
 
 .hero button{
