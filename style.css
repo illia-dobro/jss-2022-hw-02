@@ -1,0 +1,257 @@
+:root {
+    --blue: #2196F3;
+    --black: #212121;
+    --gray: #757575;
+    --hero: #2F303A;
+  }
+
+  html{
+    background-color: rgba(128, 128, 128, 0.101);
+  }
+
+
+body {
+    margin: 0 auto;
+    width: 1600px;
+    background-color: white;
+    font-family: 'Roboto';
+}
+
+.navbar, section {
+    margin: 0 215px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+li {
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.navbar, nav > ul, .contacts > ul{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+nav > ul, .contacts > ul {
+    gap: 50px;
+}
+
+.active{
+ color: var(--blue)
+}
+
+.contacts a {
+    color: var(--blue);
+}
+
+.hidden-h1 {
+    visibility: hidden;
+
+}
+
+.nav-cards{
+    text-align: center;
+}
+
+.nav-cards button{
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+    padding: 6px 22px;
+    border: white;
+    border-radius: 4px;
+}
+
+.nav-cards button:hover{
+    color: white;
+    background-color: var(--blue);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 34px 0 0 0;
+    padding: 0 0 94px 0;
+}
+.cards h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--black);
+    padding-left: 24px;
+}
+.cards p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--gray);
+    margin-top: 4px;
+    padding-left: 24px;
+}
+
+.cards li{
+    border: 1px solid #EEEEEE;
+}
+
+footer {
+    background-color: #2F303A;
+    color: white;
+    padding: 60px 215px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+address{
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.email-footer, .tel-footer{
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hero{
+    background-color: var(--hero);
+    color: white;
+    text-align: center;
+}
+.hero h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    width: 696px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.hero button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px 32px;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+
+
+.about ul{
+    display: flex;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.about strong{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.about p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--gray);
+}
+
+.what-we-do, .our-team {
+    text-align: center;
+}
+.what-we-do h2, .our-team h2{
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.what-we-do-cards{
+    display: flex;
+    gap: 30px;
+    padding:50px 0 94px 0;
+}
+
+
+.our-team{
+    background-color:#F5F4FA;
+    margin: 0;
+}
+
+.our-team h2{
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+
+.team-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 94px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.team-cards li {
+    width: 270px;
+    background-color: white;
+}
+
+.team-cards h3{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--black);
+}
+
+.email-footer:hover, .tel-footer:hover, address:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+
+
+
+
+

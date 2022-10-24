@@ -6,20 +6,24 @@
     <title>Web studio</title>
     <meta name="description" content="main page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   </head>
   <body>
-    <main>
+
       <header>
         <div class="navbar">
           <div class="logo">
-            <a href="#">WebStudio</a>
+            <a href="#"><span>Web</span>Studio</a>
           </div>
           <nav>
             <ul>
-              <li>Студія</li>
-              <li>Портфоліо</li>
-              <li>Контакти</li>
+              <li><a class='active' href="index.html">Студія</a></li>
+              <li><a  href="portfolio.html">Портфоліо</a></li>
+              <li><a href="#">Контакти</a></li>
             </ul>
           </nav>
           <div class="contacts">
@@ -31,11 +35,12 @@
             </ul>
           </div>
         </div>
-        <div class="header-hero">
+        <div class="hero">
           <h1>Ефективні рішення для вашого бізнесу</h1>
-          <button>Замовити послугу</button>
+          <button type="button">Замовити послугу</button>
         </div>
       </header>
+      <main>
       <section class="about">
         <ul>
           <li>
@@ -69,7 +74,7 @@
       </section>
       <section class="what-we-do">
         <h2>Чим ми займаємося</h2>
-        <div>
+        <div class="what-we-do-cards">
           <img
             src="./images/box-1.jpg"
             alt="computer"
@@ -87,7 +92,7 @@
       </section>
       <section class="our-team">
         <h2>Наша команда</h2>
-        <ul class="cards">
+        <ul class="team-cards">
           <li>
             <img
               src="./images/team-1.jpg"
@@ -95,7 +100,7 @@
               width="270"
               height="260"
             />
-            <b>Ігор Дем'яненко</b>
+            <h3>Ігор Дем'яненко</h3>
             <p>Product Designer</p>
           </li>
           <li>
@@ -105,7 +110,7 @@
               width="270"
               height="260"
             />
-            <b>Ольга Рєпіна</b>
+            <h3>Ольга Рєпіна</h3>
             <p>Frontend Developer</p>
           </li>
           <li>
@@ -115,7 +120,7 @@
               width="270"
               height="260"
             />
-            <b>Микола Тарасов</b>
+            <h3>Микола Тарасов</h3>
             <p>Marketing</p>
           </li>
           <li>
@@ -125,17 +130,19 @@
               width="270"
               height="260"
             />
-            <b>Михайло Єрмаков</b>
+            <h3>Михайло Єрмаков</h3>
             <p>UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <div class="logo">WebStudio</div>
+      <div class="logo"><span>Web</span>Studio</div>
       <address>
-        м. Київ, пр-т Лесі Українки, 26 info@devstudio.com +38 096 111 11 11
+        м. Київ, пр-т Лесі Українки, 26
       </address>
+      <div class="email-footer">info@devstudio.com</div>
+      <div class="tel-footer">+38 096 111 11 11</div>
     </footer>
   </body>
 </html>
