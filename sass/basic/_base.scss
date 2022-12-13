@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+  background-color: white;
+  font-family: "Roboto";
+}
+
+section {
+  margin-top: 60px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.active {
+  color: $blue;
+}
+
+@media screen and (min-width: $desktop-width) {
+  .what-we-do h2,
+  .our-team h2,
+  .clients h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: $desktop-width) {
+  .what-we-do h2,
+  .our-team h2,
+  .clients h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+}
+
+

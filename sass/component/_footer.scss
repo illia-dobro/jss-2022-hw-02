@@ -1,0 +1,75 @@
+footer {
+  margin-top: 60px;
+  padding-top: 60px - 16px;
+  padding-bottom: 60px - 30px;
+  background-color: #2f303a;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 60px;
+  }
+
+  .email-footer,
+  .tel-footer {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  .email-footer:hover,
+  .tel-footer:hover,
+  address:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+
+  .footer-social h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .footer-social li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    svg{
+      fill:white;
+    }
+  }
+
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 94px;
+    display: flex;
+    justify-content: space-around;
+
+    .social-icons li:hover {
+      cursor: pointer;
+      background-color: #2196f3;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .logo {
+      padding: 0;
+    }
+  }
+}
