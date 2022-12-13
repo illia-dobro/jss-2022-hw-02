@@ -1,0 +1,41 @@
+
+@media screen and (max-width: $tablet-width) {
+    body {
+        width: $mobil-width;
+    }
+    .wrapper-responsive {
+      width: 100% - (30px / $mobil-width) * 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width)  and (max-width: $desktop-width) {
+    body {
+        width: $tablet-width;
+    }
+    .wrapper-responsive {
+      width: 100% - (30px / $tablet-width) * 100%;
+      margin: 0 auto;
+    }
+
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    body {
+        width: $desktop-width;
+    }
+    .wrapper-responsive {
+      width: 1170px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: $mobil-width) {
+    body {
+        width: 100%;
+    }
+    .wrapper-responsive {
+      width: 97%;
+      margin: 0 auto;
+    }
+  }

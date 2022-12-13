@@ -1,0 +1,10 @@
+.js-open-menu {
+  @media (max-width: $tablet-width) {
+    background-color: white;
+    border: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

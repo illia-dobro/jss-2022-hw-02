@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Web studio</title>
     <meta name="description" content="main page" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,34 +16,60 @@
   </head>
   <body>
     <header>
+      <div class="wrapper-responsive">
       <div class="navbar">
         <div class="logo">
-          <a href="#"><span>Web</span>Studio</a>
+          <a class="logo__link" href="#"><span>Web</span>Studio</a>
         </div>
         <nav>
-          <ul>
-            <li><a class="active" href="index.html">Студія</a></li>
-            <li><a href="portfolio.html">Портфоліо</a></li>
-            <li><a href="#">Контакти</a></li>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+          <ul class="navbar__list">
+            <li class="navbar__item"><a class="navbar__link active" href="index.html">Студія</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="portfolio.html">Портфоліо</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Контакти</a></li>
           </ul>
+
         </nav>
         <div class="contacts">
-          <ul>
-            <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>+38 096 111 11 11</li>
           </ul>
         </div>
       </div>
-      <div class="hero">
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open type="button">Замовити послугу</button>
-      </div>
+
+    </div>
+    <div class="hero">
+      <h1>Ефективні рішення для вашого бізнесу</h1>
+      <button data-modal-open type="button">Замовити послугу</button>
+    </div>
     </header>
     <main>
       <section class="about">
-        <ul>
+        <div class="wrapper-responsive">
+
+        <ul class="about__list">
           <li class="about-item">
             <svg width="70" height="70">
               <use href="./images/symbol-defs.svg#icon-satelit"></use>
@@ -84,8 +110,10 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <section class="what-we-do">
+        <div class="wrapper-responsive">
         <h2>Чим ми займаємося</h2>
         <div class="what-we-do-cards">
           <div class="img-container">
@@ -124,11 +152,13 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
       <section class="our-team">
+        <div class="wrapper-responsive">
         <h2>Наша команда</h2>
         <ul class="team-cards">
-          <li>
+          <li class="team-cards__item">
             <img
               src="./images/team-1.jpg"
               alt="Igor"
@@ -147,7 +177,7 @@
               </li>
               <li>
                 <a href="#">
-                  <svg width="20" height="16.25">
+                  <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -168,7 +198,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-cards__item">
             <img
               src="./images/team-2.jpg"
               alt="Olha"
@@ -187,7 +217,7 @@
               </li>
               <li>
                 <a href="#">
-                  <svg width="20" height="16.25">
+                  <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -208,7 +238,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-cards__item">
             <img
               src="./images/team-3.jpg"
               alt="Mykola"
@@ -227,7 +257,7 @@
               </li>
               <li>
                 <a href="#">
-                  <svg width="20" height="16.25">
+                  <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -248,7 +278,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-cards__item">
             <img
               src="./images/team-4.jpg"
               alt="Myhaylo"
@@ -267,7 +297,7 @@
               </li>
               <li>
                 <a href="#">
-                  <svg width="20" height="16.25">
+                  <svg width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -289,10 +319,13 @@
             </ul>
           </li>
         </ul>
+      </div>
       </section>
       <section class="clients">
+        <div class="wrapper-responsive">
         <h2>Постійні клієнти</h2>
-        <ul>
+
+        <ul class="clients__list">
           <li>
             <svg>
               <use href="./images/symbol-defs.svg#icon-Logo"></use>
@@ -324,6 +357,7 @@
             </svg>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer>
@@ -403,6 +437,54 @@
         </form>
       </div>
     </div>
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link active">Студія</a></li>
+        <li><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobil-contacts">
+        <li class="mobil-contacts__tel">+38 096 111 11 11</li>
+        <li class="mobil-contacts__email">info@devstudio.com</li>
+      </ul>
+
+      <ul class="social-links">
+        <li class="social-links__item"><a class="social-links__link" href="">Instagram</a></li>
+        <li class="social-links__item"><a class="social-links__link" href="">Twitter</a></li>
+        <li class="social-links__item"><a class="social-links__link" href="">Facebook</a></li>
+        <li class="social-links__item"><a class="social-links__link" href="">LinkedIn</a></li>
+      </ul>
+
+
+    </div>
+
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
