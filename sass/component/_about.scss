@@ -1,4 +1,5 @@
 .about-item {
+  box-sizing: content-box;
   color: $gray;
   svg {
     display: block;
@@ -23,7 +24,7 @@
   @media screen and (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 
     strong {
       font-size: 14px;

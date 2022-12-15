@@ -1,7 +1,12 @@
+.container {
+  margin: 0 auto;
+  
+}
+
 
 @media screen and (max-width: $tablet-width) {
-    body {
-        width: $mobil-width;
+    .container {
+        width: 450px;
     }
     .wrapper-responsive {
       width: 100% - (30px / $mobil-width) * 100%;
@@ -10,7 +15,7 @@
   }
 
   @media screen and (min-width: $tablet-width)  and (max-width: $desktop-width) {
-    body {
+    .container {
         width: $tablet-width;
     }
     .wrapper-responsive {
@@ -21,8 +26,8 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    body {
-        width: $desktop-width;
+    .container {
+        width: 1170px;
     }
     .wrapper-responsive {
       width: 1170px;
@@ -31,7 +36,7 @@
   }
 
   @media screen and (max-width: $mobil-width) {
-    body {
+    .container {
         width: 100%;
     }
     .wrapper-responsive {
