@@ -320,6 +320,8 @@ nav > ul,
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+  }
+  ul.contacts__list {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;

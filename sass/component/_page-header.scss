@@ -208,7 +208,11 @@ nav > ul,
 
   .contacts__list {
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; 
+    
+  }
+
+  ul.contacts__list {
     align-items: flex-start;
   }
 
