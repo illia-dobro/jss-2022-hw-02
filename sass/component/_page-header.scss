@@ -17,6 +17,10 @@
     fill:$blue;
   }
 
+  svg{
+    fill:$gray;
+  }
+
 }
 
 .navbar,
@@ -85,6 +89,8 @@ nav > ul,
     transition: opacity 350ms ease-in-out;
 
 }
+
+
 
 .hero__container {
   text-align: center;
@@ -203,6 +209,7 @@ nav > ul,
   .contacts__list {
     flex-direction: column;
     gap: 10px;
+    align-items: flex-start;
   }
 
   .hero {

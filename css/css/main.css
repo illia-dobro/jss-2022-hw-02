@@ -31,6 +31,7 @@ html {
 body {
   background-color: white;
   font-family: "Roboto";
+  margin: 0;
 }
 
 section {
@@ -122,6 +123,9 @@ img {
 }
 .contacts__item:hover {
   fill: #2196F3;
+}
+.contacts__item svg {
+  fill: #757575;
 }
 
 .navbar,
@@ -316,6 +320,9 @@ nav > ul,
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .hero h1 {
     width: 360px;
@@ -568,12 +575,17 @@ footer {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.mobile-menu a {
-  padding-bottom: 32px;
 }
 
 .mobile-menu .link {
@@ -593,6 +605,16 @@ footer {
 .mobil-contacts__tel {
   color: #2196F3;
   padding-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .mobil-contacts__tel {
+    font-size: 27px;
+  }
+}
+
+.mobil-contacts__email {
+  font-size: 24px;
+  color: #757575;
 }
 
 .social-links {
@@ -898,6 +920,13 @@ footer {
     min-height: 0px;
   }
 }
+@media screen and (max-width: 480px), (max-height: 609px) {
+  .modal {
+    top: 30px;
+    -webkit-transform: translate(-50%) scale(100%);
+            transform: translate(-50%) scale(100%);
+  }
+}
 @media screen and (min-width: 1600px) {
   .modal {
     width: 528px;
@@ -913,6 +942,8 @@ footer {
   height: 100%;
   -webkit-transition: opacity 500ms ease-in-out;
   transition: opacity 500ms ease-in-out;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden {
