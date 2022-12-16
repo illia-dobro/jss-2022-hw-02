@@ -1,4 +1,4 @@
-.about-item {
+.about__item {
   box-sizing: content-box;
   color: $gray;
   svg {
@@ -57,7 +57,7 @@
     }
   }
   @media screen and (min-width: $desktop-width){
-    .about-item {
+    .about__item {
       flex-basis: 270px;
       font-size: 14px;
 

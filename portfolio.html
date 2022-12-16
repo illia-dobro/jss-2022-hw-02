@@ -16,61 +16,77 @@
   </head>
   <body>
     <header>
-      <div class="wrapper-responsive">
-      <div class="navbar">
-        <div class="logo">
-          <a class="logo__link" href="#"><span>Web</span>Studio</a>
-        </div>
-        <nav>
-          <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a class="logo__link" href="#"><span>Web</span>Studio</a>
+          </div>
+          <nav class="main-navigation">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
 
-          <ul class="navbar__list">
-            <li class="navbar__item"><a class="navbar__link active" href="index.html">Студія</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="portfolio.html">Портфоліо</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Контакти</a></li>
-          </ul>
-
-        </nav>
-        <div class="contacts">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>+38 096 111 11 11</li>
-          </ul>
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link active" href="index.html">Студія</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="portfolio.html">Портфоліо</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <svg width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-email-nav"></use>
+                </svg>
+                <a class="contacts__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <svg width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-phone-nav"></use>
+                </svg>
+                +38 096 111 11 11
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-    </div>
+      
+    </header>
     <section class="section-porfolio">
       <h1 class="section-porfolio_heading hidden-h1">Portfolio</h1>
-      <div class="nav-cards">
-        <button class="nav-cards__item" type="button">Усі</button>
+      <div class="nav-cards container">
+        <button class="nav-cards__item active" type="button">Усі</button>
         <button class="nav-cards__item" type="button">Веб-сайти</button>
         <button class="nav-cards__item" type="button">Додатки</button>
         <button class="nav-cards__item" type="button">Дизайн</button>
         <button class="nav-cards__item" type="button">Маркетинг</button>
       </div>
 
-      <div class="wrapper-responsive">
+      <div class="container">
 
 
 
@@ -150,44 +166,73 @@
     </div>
     </section>
     <footer>
-      <div class="info">
-        <div class="logo"><span>Web</span>Studio</div>
-        <address>м. Київ, пр-т Лесі Українки, 26</address>
-        <div class="email-footer">info@devstudio.com</div>
-        <div class="tel-footer">+38 096 111 11 11</div>
-      </div>
-      <div class="footer-social">
-        <h3>приєднуйтесь</h3>
-        <ul class="social-icons">
-          <li>
-            <a href="#">
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="20" height="16.25">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="10" height="20">
-                <use href="./images/symbol-defs.svg#icon-Vectorface"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <div class="footer container">
+        <div class="footer_item info">
+          <div class="logo"><span>Web</span>Studio</div>
+          <address>м. Київ, пр-т Лесі Українки, 26</address>
+          <div class="email-footer">info@devstudio.com</div>
+          <div class="tel-footer">+38 096 111 11 11</div>
+        </div>
+        <div class="footer_item footer-social">
+          <h3>приєднуйтесь</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="16.25">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="10" height="20">
+                  <use href="./images/symbol-defs.svg#icon-Vectorface"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_item subscription">
+          <div class="wrapper-responsive">
+            <form
+              class="subscription__form"
+              name="subscription_form"
+              autocomplete="off"
+            >
+              <p class="subscription__heading">Підпишіться на розсилку</p>
+              <div class="subscription__form-group">
+                <input
+                  class="subscription__email-input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  aria-label="E-mail"
+                />
+                <button class="btn btn--sub" type="submit">
+                  Підписатися
+                  <svg class="subscription__icon" height="24" width="24">
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">

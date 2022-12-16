@@ -34,7 +34,7 @@ nav > ul,
   justify-content: space-between;
 }
 
-.navbar__list {
+.main-navigation__list {
   gap: 50px;
 }
 
@@ -50,7 +50,7 @@ nav > ul,
   }
 }
 
-.navbar__item {
+.main-navigation__item {
   position: relative;
 
   &::after {
@@ -70,11 +70,11 @@ nav > ul,
   }
 }
 
-.contacts__link:hover, .navbar__link:hover{
+.contacts__link:hover, .main-navigation__link:hover{
     color: $blue;
 }
 
-.navbar__list .active::after {
+.main-navigation__list .active::after {
     content: "";
     position: absolute;
     bottom: -34px;
@@ -135,7 +135,7 @@ nav > ul,
 }
 
 @media screen and (max-width: $tablet-width) {
-  .navbar__list,
+  .main-navigation__list,
   .contacts {
     display: none;
   }
@@ -175,7 +175,7 @@ nav > ul,
       }
     }
 
-    .navbar__link:hover,
+    .main-navigation__link:hover,
     .contacts__link:hover {
       color: $blue;
     }

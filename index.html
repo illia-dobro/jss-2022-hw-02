@@ -21,7 +21,7 @@
           <div class="logo">
             <a class="logo__link" href="#"><span>Web</span>Studio</a>
           </div>
-          <nav>
+          <nav class="main-navigation">
             <button
               class="menu-toggle js-open-menu"
               aria-expanded="false"
@@ -42,15 +42,15 @@
               </svg>
             </button>
 
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a class="navbar__link active" href="index.html">Студія</a>
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link active" href="index.html">Студія</a>
               </li>
-              <li class="navbar__item">
-                <a class="navbar__link" href="portfolio.html">Портфоліо</a>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="portfolio.html">Портфоліо</a>
               </li>
-              <li class="navbar__item">
-                <a class="navbar__link" href="#">Контакти</a>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -87,7 +87,7 @@
       <section class="about">
         <div class="container">
           <ul class="about__list">
-            <li class="about-item">
+            <li class="about__item">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-satelit"></use>
               </svg>
@@ -97,7 +97,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about__item">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-comp"></use>
               </svg>
@@ -107,7 +107,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about__item">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-clock"></use>
               </svg>
@@ -116,7 +116,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="about-item">
+            <li class="about__item">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
               </svg>
@@ -133,35 +133,35 @@
         <div class="container">
           <h2>Чим ми займаємося</h2>
           <div class="what-we-do-cards">
-            <div class="img-container">
-              <a href="#">
+            <div class="what-we-do-cards__item">
+              <a class="what-we-do-cards__link" href="#">
                 <img
                   src="./images/box-1.jpg"
                   alt="computer"
                   width="370"
                   height="294"
                 />
-                <div class="img-overlay">
+                <div class="what-we-do-cards__caption">
                   <p>Десктопні додатки</p>
                 </div>
               </a>
             </div>
-            <div class="img-container">
-              <a href="#">
+            <div class="what-we-do-cards__item">
+              <a class="what-we-do-cards__link" href="#">
                 <img
                   src="./images/box-2.jpg"
                   alt="mobil"
                   width="370"
                   height="294"
                 />
-                <div class="img-overlay">
+                <div class="what-we-do-cards__caption">
                   <p>Мобільні додатки</p>
                 </div>
               </a>
             </div>
 
-            <div class="img-container">
-              <a href="#">
+            <div class="what-we-do-cards__item">
+              <a class="what-we-do-cards__link"  href="#">
                 <img
                   src="./images/box-3.jpg"
                   alt="graphic"
@@ -169,7 +169,7 @@
                   height="294"
                 />
 
-                <div class="img-overlay">
+                <div class="what-we-do-cards__caption">
                   <p>Дизайнерські рішення</p>
                 </div>
               </a>
