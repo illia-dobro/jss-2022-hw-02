@@ -78,10 +78,14 @@
   }
 
   input {
+    display: block;
     margin-top: 4px;
     margin-bottom: 10px;
     padding: 10px;
     padding-left: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33,33,33,.2);
+      
   }
 }
 
@@ -162,4 +166,15 @@ input:focus-within + svg {
   outline: none;
   border: 2px solid $blue;
   border-radius: 4px;
+}
+
+.form-call-back__textarea {
+  height: 120px;
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 16px;
+padding-right: 16px;
+resize: none;
+border: 1px solid rgba(33,33,33,.2);
+border-radius: 4px;
 }

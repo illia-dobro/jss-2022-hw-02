@@ -36,6 +36,10 @@ nav > ul,
 
 .navbar {
   justify-content: space-between;
+
+  @media screen and (max-width: $tablet-width) {
+    padding: 10px 10px;
+  }
 }
 
 .main-navigation__list {
@@ -48,6 +52,11 @@ nav > ul,
   font-size: 26px;
   line-height: 1.2;
   padding: 26px 15px;
+
+  @media screen and (max-width: $tablet-width) {
+    padding: 0 0;
+  }
+
 
   span {
     color: $blue;
@@ -119,6 +128,8 @@ nav > ul,
 
   
 
+  
+
   @media screen and (min-width: $tablet-width)  and (max-width: $desktop-width){
     background-image: linear-gradient(rgba(24, 24, 24, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768.jpg);
    background-size: 768px;
@@ -187,10 +198,11 @@ nav > ul,
     }
   }
 
-  .hero {
-    height: 600px;
-    background-image: url(../../images/big_hero.jpg);
+  .hero {    
+    
     background-size: 1600px;
+    min-height: 600px;    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/big_hero.jpg);
 
     h1 {
       font-size: 44px;

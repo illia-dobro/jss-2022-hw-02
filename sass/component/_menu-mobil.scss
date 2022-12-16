@@ -105,6 +105,7 @@
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
+  margin-top: auto;
 }
 
 .mobil-contacts__tel {
@@ -154,4 +155,9 @@
     display: none;
   }
 
+}
+
+.menu-button__icon:hover {
+  fill:$blue;
+  background-color: #fff;
 }

@@ -47,7 +47,7 @@ img {
   color: #2196F3;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .what-we-do h2,
 .our-team h2,
 .clients h2 {
@@ -56,7 +56,7 @@ img {
     margin: 0;
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .what-we-do h2,
 .our-team h2,
 .clients h2 {
@@ -78,7 +78,7 @@ img {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 768px;
   }
@@ -87,7 +87,7 @@ img {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1170px;
   }
@@ -148,6 +148,11 @@ nav > ul,
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+}
 
 .main-navigation__list {
   gap: 50px;
@@ -159,6 +164,11 @@ nav > ul,
   font-size: 26px;
   line-height: 1.2;
   padding: 26px 15px;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    padding: 0 0;
+  }
 }
 .logo span {
   color: #2196F3;
@@ -202,12 +212,12 @@ nav > ul,
 .hero__container {
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero__container {
     width: 360px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__container {
     width: 696px;
   }
@@ -235,7 +245,7 @@ nav > ul,
   background-size: cover;
   background-position: center center;
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(24, 24, 24, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-768.jpg);
     background-image: linear-gradient(rgba(24, 24, 24, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-768.jpg);
@@ -273,7 +283,7 @@ nav > ul,
     line-height: 1.8;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .navbar_menu {
     display: none;
   }
@@ -299,9 +309,10 @@ nav > ul,
     color: #2196F3;
   }
   .hero {
-    height: 600px;
-    background-image: url(../../images/big_hero.jpg);
     background-size: 1600px;
+    min-height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/big_hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/big_hero.jpg);
   }
   .hero h1 {
     font-size: 44px;
@@ -310,7 +321,7 @@ nav > ul,
     letter-spacing: 0.06em;
   }
 }
-@media (min-width: 768px) and (max-width: 1600px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .navbar_menu {
     display: none;
   }
@@ -351,7 +362,7 @@ footer {
 .footer .logo {
   padding: 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -412,7 +423,7 @@ footer {
 .footer .footer-social li svg {
   fill: white;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer {
     margin-top: 94px;
   }
@@ -423,7 +434,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -602,6 +613,7 @@ footer {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
+  margin-top: auto;
 }
 
 .mobil-contacts__tel {
@@ -650,6 +662,11 @@ footer {
     display: none;
   }
 }
+.menu-button__icon:hover {
+  fill: #2196F3;
+  background-color: #fff;
+}
+
 .about__item {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -665,7 +682,7 @@ footer {
 .about__item strong {
   color: #212121;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .about__item p {
     font-weight: 400;
     font-size: 14px;
@@ -708,7 +725,7 @@ footer {
       flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .about__list li {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 354px;
@@ -721,7 +738,7 @@ footer {
         flex-basis: 100%;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .about__list .about__item {
     -ms-flex-preferred-size: 270px;
         flex-basis: 270px;
@@ -775,7 +792,7 @@ footer {
   height: 60px;
   fill: #afb1b8;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__list {
     padding-top: 50px;
   }
@@ -803,7 +820,7 @@ footer {
   margin-top: 10px;
   margin-bottom: 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .our-team {
     text-align: center;
     padding-top: 94px;
@@ -830,7 +847,7 @@ footer {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .team-cards .team-cards__item {
     width: 354px;
   }
@@ -839,7 +856,7 @@ footer {
     height: 374px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team-cards .team-cards__item {
     width: 270px;
   }
@@ -857,7 +874,7 @@ footer {
 .what-we-do {
   display: none;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .what-we-do {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -929,7 +946,7 @@ footer {
             transform: translate(-50%) scale(100%);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
   }
@@ -987,10 +1004,13 @@ footer {
   padding-bottom: 4px;
 }
 .form-call-back input {
+  display: block;
   margin-top: 4px;
   margin-bottom: 10px;
   padding: 10px;
   padding-left: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .form-call-back > h2 {
@@ -1005,7 +1025,7 @@ footer {
   font-size: 14px;
   line-height: 1.7;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   #yes + label {
     font-size: 12px;
   }
@@ -1079,6 +1099,17 @@ input:focus-within + svg {
 .form-call-back textarea:focus {
   outline: none;
   border: 2px solid #2196F3;
+  border-radius: 4px;
+}
+
+.form-call-back__textarea {
+  height: 120px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
@@ -1186,13 +1217,13 @@ input:focus-within + svg {
   width: 450px;
   height: 294px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .cards li {
     -ms-flex-preferred-size: 368.6666666667px;
         flex-basis: 368.6666666667px;
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .cards li {
     -ms-flex-preferred-size: 354px;
         flex-basis: 354px;
@@ -1268,7 +1299,7 @@ input:focus-within + svg {
 .subscription__form {
   padding-top: 30px;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .subscription__form {
     padding-top: 0;
   }
@@ -1302,7 +1333,7 @@ input:focus-within + svg {
             flex-direction: column;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .subscription__form-group {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -27,19 +27,9 @@
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg
-                width="24"
-                height="24"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+            <svg class="menu-button__icon" height="40" width="40">
+              <use href="./images/symbol-defs.svg#icon-open_menu"></use>
+            </svg>
             </button>
 
             <ul class="main-navigation__list">
@@ -520,7 +510,7 @@
           </label>
 
           <label for="comment">Коментар</label>
-          <textarea name="" id="comment" cols="30" rows="6"></textarea>
+          <textarea class="form-call-back__textarea" name="" id="comment" cols="30" rows="6"></textarea>
           <div class="check-for-yes">
             <input type="checkbox" class="checkbox" id="yes" />
             <label for="yes"
